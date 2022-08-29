@@ -1,0 +1,251 @@
+/*
+|--------------------------------------------------------------------------
+| Loader
+|--------------------------------------------------------------------------
+*/
+
+@keyframes preloader {
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }    
+    100%{
+        opacity: 0;
+        transform: translateY(-200%);
+    }      
+}
+  
+@keyframes move-left {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-20%);
+    }
+}
+  
+
+@-webkit-keyframes move-left {
+    from{
+      transform: translateX(0%);
+    }
+    to{
+      transform: translateX(-20%);
+    }
+}
+  
+@keyframes move-left {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-20%);
+    }
+}
+  
+@-webkit-keyframes move-right {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(20%);
+    }
+}
+
+@keyframes move-right {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(20%);
+    }
+}
+
+/* @-moz-keyframes spin { 
+    100% { -moz-transform: rotate(180deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(180deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(180deg); 
+        transform:rotate(180deg); 
+    } 
+}  */
+
+/*
+|--------------------------------------------------------------------------
+| Page Content
+|--------------------------------------------------------------------------
+*/
+
+@keyframes anim-scroll-to-explore {
+    from{
+        transform: scaleY(1);
+    }
+
+    to{
+        opacity: 1;
+        transform: scaleY(2.9);
+    }
+}
+
+@keyframes im-your-imagination-fading-text {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes anim-im-your-imagination-pattern1{
+    0%{
+        opacity: 0;
+        transform: translate(-3rem, -16rem);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(-3rem, -10.5rem);
+    }    
+
+    100%{
+        opacity: 1;
+        transform: translate(-3rem, -10.5rem) rotate(90deg);
+    }
+}
+
+@keyframes anim-im-your-imagination-pattern2{
+    0%{
+        opacity: 0;
+        transform: translate(-9rem, -2rem);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(-9rem, -8rem);
+    }    
+
+    100%{
+        opacity: 1;
+        transform: translate(-9rem, -8rem) rotate(90deg);
+    }
+}
+
+@keyframes anim-create-future {
+    from{
+        opacity: 0;
+        transform: translateX(140%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes anim-fade-in {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes anim-fade-out{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes anim-im-your-wallet-title {
+    from{
+        transform: translateY(-20%) scale(2);
+    }
+
+    to{
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes anim-im-your-wallet-desc {
+    from{
+        transform: translateY(2.2rem);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes eye-lid-blinking {
+    0%{
+        transform: rotateX(0deg);
+    }
+    33%{
+        transform: rotateX(180deg);
+    }
+    66%{
+        transform: rotateX(0);
+    }    
+    100%{
+        transform: rotateX(180deg);
+    }       
+} 
+
+@keyframes anim-eye-zoom-out {
+    from{
+        opacity: 0;
+        transform: translateY(30%) scale(4);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes anim-im-your-home-box {
+    0%{
+        opacity: 0;
+        transform: scale(0.1);
+        border-color: #E8DFD4;
+    }
+
+    50%{
+        opacity: 1;
+        transform: scale(1);
+        border-color: #E8DFD4;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        border-color: transparent;
+    }    
+}
+
+@keyframes anim-im-your-home-inner-box {
+    0%{
+        opacity: 0;
+        transform: scaleY(0);
+        border-color: #E8DFD4;
+    }
+
+    50%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-50%) scaleY(1);
+    }    
+}

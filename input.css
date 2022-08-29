@@ -1,0 +1,95 @@
+@import "./animations.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #E1D8CC;
+    background-color: #000000;
+}
+
+.navbar .logo-link > svg{
+    width: 9rem;
+    top: -8vh;
+    left: -4.8rem;
+    transform: rotate(-90deg);
+}
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    /*yeeee*/
+    transition: transform 500ms linear;
+}
+
+.wrapper > .section{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Desktop Layout
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 1281px) {
+	html {
+		font-size: calc(16px + ( (100vw - 1281px) *  0.002814) );
+	}
+    /* .section{
+        padding-left: calc(160px + ( (100vw - 1281px) *  0.23925) );
+        padding-right: calc(160px + ( (100vw - 1281px) *  0.23925) );
+    } */
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Tablet Layout
+|--------------------------------------------------------------------------
+|
+*/
+
+@media only screen and (max-width: 1100px){	
+    .wrapper{
+        position: absolute;
+        flex-direction: column;
+        height: auto;
+    }
+    .skrollr.skrollr-desktop .wrapper{
+        transform: none !important;
+    }
+    .skrollr.skrollr-mobile .wrapper{
+        touch-action: none;
+    }    
+    /* .navbar .logo-link > svg{
+        transform: none;
+    }     */
+}
+
+/*
+|--------------------------------------------------------------------------
+| Mobile Layout
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 700px){
+    /* html{
+        font-size: 14.4px;
+    } */
+}
