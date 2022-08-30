@@ -20,7 +20,7 @@ gsap.from(".bar", {
       trigger: "#section-3",
       scrub: true,
       pin: true,
-      pinSpacing: true,
+    //   pinSpacing: true,
       start: "center left",
       end: "+=100%",
     //   onEnter: () => setActive(links[1]),
