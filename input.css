@@ -3,50 +3,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body{
-    color: #E1D8CC;
-    background-color: #000000;
+    overflow-x: hidden;
 }
 
-.navbar .logo-link > svg{
-    width: 9rem;
-    top: -8vh;
-    left: -4.8rem;
-    transform: rotate(-90deg);
+#container {
+    background-color:grey;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    height:100vh;
 }
 
-.wrapper{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    /*yeeee*/
-    /* scroll-snap-type: y mandatory; */
-    /* overflow-x: scroll;     */
-    transition: transform;
-    transform-origin: left center;
-    transition-timing-function: linear;
-}
-.wrapper > .section{
+.module{
+    height:100%;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 2rem;
-    flex-shrink: 0;
-    /**/
+    display:flex;
 }
 
+.green{
+    /* width:500px; */
+    background-color:green;
+}
+
+.yellow{
+    /* width:1300px; */
+    background-color:yellow;
+}
+
+.purple{
+    /* width:800px; */
+    background-color:purple;
+}
+
+.orange{
+    /* width:800px; */
+    background-color:orange;
+}
+
+.blue{
+    /* width:2100px; */
+    background-color:blue;
+}
+
+.red{
+    /* width:900px; */
+    background-color:red;
+}
+.bar{
+    background-color: white;
+    width: 90%;
+    margin: auto auto;
+    height: 2rem;
+}
 /*
 |--------------------------------------------------------------------------
 | Desktop Layout
@@ -72,15 +87,15 @@ body{
 */
 
 @media only screen and (max-width: 1100px){	
-    .wrapper{
+    #wrapper{
         position: fixed;
         flex-direction: column;
         transform-origin: center top;
     }
-    .skrollr.skrollr-desktop .wrapper{
+    .skrollr.skrollr-desktop #wrapper{
         transform: none !important;
     }
-    .skrollr.skrollr-mobile .wrapper{
+    .skrollr.skrollr-mobile #wrapper{
         touch-action: none;
     }    
     /* .navbar .logo-link > svg{
@@ -98,4 +113,22 @@ body{
     /* html{
         font-size: 14.4px;
     } */
+}
+
+@keyframes anim {
+    0%{
+        transform: translateX(0%);
+    } 
+    100%{
+        transform: translateX(1000%);
+    }      
+}
+#hehe{
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+}
+.anim{
+    animation: anim 1000ms ease;
+    animation-fill-mode: both;
 }
